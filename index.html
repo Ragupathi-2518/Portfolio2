@@ -375,9 +375,10 @@
         }
 
         .about-info p {
-            color: #888;
-            font-size: 16px;
-        }
+                    color: coral;
+                    font-weight: 600;
+                    margin-right: 10px;
+                }
 
         .about-info p span {
             color: #00f5ff;
@@ -450,15 +451,7 @@
             line-height: 1.6;
         }
 
-        .skill-bar {
-            background: #0a0a0a;
-            height: 12px;
-            border-radius: 10px;
-            margin-top: 15px;
-            overflow: hidden;
-            position: relative;
-        }
-
+     
         .skill-progress {
             height: 100%;
             background: linear-gradient(90deg, #00f5ff, #0080ff);
@@ -1001,7 +994,9 @@
     <section id="about">
         <h2 class="section-title fade-in">About Me</h2>
         <div class="about-content fade-in">
-            <div class="about-img">👨‍💻</div>
+            <div class="about-img">
+                <img src="src/RAGU.jpg" alt="Ragupathi Profile Photo" style="width: 99%; height: 99%; object-fit: cover; border-radius: 20px;" />
+            </div>
             <div class="about-text">
                 <h3>Web Developer & Designer</h3>
                 <p>I'm a passionate developer with expertise in creating modern, responsive, and user-friendly web applications. With a strong foundation in both frontend and backend technologies, I bring ideas to life through clean code and innovative design.</p>
@@ -1011,13 +1006,22 @@
                     <p><span>Experience:</span> 4 month </p>
                 </div>
 
-                <a href="src/RAGUPATHI.pdf" class="btn" style="margin-top: 25px;" download>
-                    <span style="margin-right:8px;">⬇️</span>Download Resume
-                </a>
-                <span style="display:inline-block; width: 16px;"></span>
-                <a href="RAGUPATHI.pdf" class="btn" style="margin-top: 25px;" target="_blank" rel="noopener">
-                    <span style="margin-right:8px;">👁️</span>View Resume
-                </a>
+                                <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 25px;">
+                                    <div style="display: flex; gap: 16px;">
+                                        <a href="src/RAGUPATHI.pdf" class="btn" download>
+                                            <span style="margin-right:8px;">⬇️</span>Download Resume
+                                        </a>
+                                        <a href="src/RAGUPATHI.pdf" class="btn" target="_blank" rel="noopener" style="background: lightcoral; color: white;">
+                                            <span style="margin-right:8px;">👁️</span>View Resume
+                                        </a>
+                                    
+                                    </div>
+                                     <a href="src/ragu.certificate.pdf" class="btn" style="background: transparent; color: #00f5ff; border: 2px solid #00f5ff; width: 40%; text-align: center;" target="_blank" rel="noopener">
+                                        <span style="margin-right:8px;">👁️</span>View Certificate
+                                    </a>
+                                </div>
+
+                
             </div>
         </div>
     </section>
@@ -1027,52 +1031,40 @@
         <h2 class="section-title fade-in">My Skills</h2>
         <div class="skills-container">
             <div class="skill-box fade-in">
-                <div class="skill-icon">💻</div>
+                <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
                 <h3>Web Development</h3>
                 <p>HTML, CSS, JavaScript</p>
-                <div class="skill-bar">
-                    
-                </div>
             </div>
+
             <div class="skill-box fade-in">
-                <div class="skill-icon">⚛️</div>
+                <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
                 <h3>Frontend Frameworks</h3>
                 <p>React, Vue.js, Angular</p>
-                <div class="skill-bar">
-                    
-                </div>
             </div>
+
             <div class="skill-box fade-in">
-                <div class="skill-icon">🔧</div>
+                <div class="skill-icon"><i class="fa-solid fa-gears"></i></div>
                 <h3>Backend Development</h3>
                 <p>Node.js, Express, MongoDB</p>
-                <div class="skill-bar">
-                 
-                </div>
             </div>
+
             <div class="skill-box fade-in">
-                <div class="skill-icon">🎨</div>
+                <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
                 <h3>UI/UX Design</h3>
                 <p>Figma, Adobe XD, Photoshop</p>
-                <div class="skill-bar">
-                   
-                </div>
             </div>
+
             <div class="skill-box fade-in">
-                <div class="skill-icon">📱</div>
+                <div class="skill-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
                 <h3>Responsive Design</h3>
                 <p>Bootstrap, Tailwind CSS</p>
-                <div class="skill-bar">
-                   
-                </div>
             </div>
+
             <div class="skill-box fade-in">
-                <div class="skill-icon">🗄️</div>
+                <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
                 <h3>Database Management</h3>
                 <p>MySQL, PostgreSQL, Firebase</p>
-                <div class="skill-bar">
-                   
-                </div>
+                
             </div>
         </div>
     </section>
@@ -1082,7 +1074,7 @@
         <h2 class="section-title fade-in">My Projects</h2>
         <div class="projects-container">
             <div class="project-card fade-in">
-                <div class="project-img">🌐</div>
+                <div class="project-img"><i class="fa-solid fa-cart-shopping"></i></div>
                 <div class="project-info">
                     <h3>E-Commerce Platform</h3>
                     <p>A full-stack e-commerce solution with payment gateway integration, user authentication, and admin dashboard.</p>
@@ -1094,19 +1086,24 @@
                 </div>
             </div>
             <div class="project-card fade-in">
-                <div class="project-img">📊</div>
+                <div class="project-img"><i class="fa-solid fa-comments"></i></div>
                 <div class="project-info">
-                    <h3>Task Management System</h3>
-                    <p>A powerful project management tool with team collaboration features and progress tracking.</p>
+                    <h3>PRMessegner app</h3>
+                    <p>A secure, real-time chat application with private messaging capabilities and futuristic UI design. Features global chat rooms, end-to-end encryption, and seamless user experience.</p>
                     <div class="project-tags">
-                        <span class="tag">Angular</span>
-                        <span class="tag">Express</span>
-                        <span class="tag">MySQL</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
                     </div>
                 </div>
             </div>
             <div class="project-card fade-in">
-                <div class="project-img">💼</div>
+                <div class="project-img project-img-status">
+                    <span class="project-status completed top-right" title="Completed"></span>
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+    
                 <div class="project-info">
                     <h3>Portfolio Builder</h3>
                     <p>An interactive portfolio creation tool allowing users to build and customize their personal websites.</p>
@@ -1157,10 +1154,10 @@
                 <i class="fas fa-envelope"></i>
                 <span>raghuharish499@gmail.com</span>
               </div>
-                 <div class="contact-item">
-                     <i class="fas fa-envelope"></i>
-                     <span>7339377429</span>
-                 </div>
+               <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>+91 7339377429</span>
+              </div>
               <div class="contact-item">
                 <i class="fas fa-map-marker-alt"></i>
                 <span>Villupuram, Tamil Nadu</span>
@@ -1169,7 +1166,7 @@
             <br><br>
 
             <div class="social-links">
-                <a href="https://github.com/Ragupathi-p" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/ragu2518" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/ragupathi251822" title="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="mailto:raghuharish499@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
                 <a href="https://www.instagram.com/_.red_error._18?igsh=cHk1ZmU4bm1rbnM1" title="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
